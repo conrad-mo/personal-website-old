@@ -45,7 +45,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex h-screen justify-center items-center" id="skills">
+      <div className="flex h-screen justify-center items-center min-h-screen" id="skills">
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
           <div className="flex gap-36 flex-wrap flex-shrink">
@@ -93,29 +93,82 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-center items-center" id="projects">
-        <div className="flex flex-col justify-start gap-8 m-8">
+      <div className="flex justify-center items-center" id="projects">
+        <div className="flex flex-col justify-start gap-8 m-32">
           <div className="text-6xl">Projects</div>
           <div className="flex flex-wrap gap-8">
-            <div className="flex flex-col w-80 shrink-0">
-              <div>UTSC Geoguessr</div>
-              <div>A game built with python and tkinter that aims to help new students learn the campus. Submission for HTV 7</div>
+            <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+              <Image
+                src="/utscgeoguessr.jpg"
+                alt="UTSC Geoguessr Banner"
+                width={400}
+                height={400}
+              />
+              <div className="mx-4">
+                <div>UTSC Geoguessr</div>
+                <div>
+                  A game built with python and tkinter that aims to help new
+                  students learn the campus. Submission for HTV 7
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col w-80 shrink-0">
-              <div>Retina</div>
-              <div>A desktop app that focuses on helping people explore their surroudings by providing definitions of objects around them. Submission for UoftHacksX</div>
+            <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+              <Image
+                src="/retina.png"
+                alt="Retina Banner"
+                width={400}
+                height={400}
+              />
+              <div className="mx-4">
+                <div>Retina</div>
+                <div>
+                  A desktop app that focuses on helping people explore their
+                  surroudings by providing definitions of objects around them.
+                  Submission for UoftHacksX
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col w-80 shrink-0">
-              <div>Viridian</div>
-              <div>A mobile app for iOS and Android that allows users to talk to each other</div>
+            <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+              <Image
+                src="/viridian.png"
+                alt="Viridian Banner"
+                width={400}
+                height={400}
+              />
+              <div className="mx-4">
+                <div>Viridian</div>
+                <div>
+                  A mobile app for iOS and Android that allows users to talk to
+                  each other
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col w-80 shrink-0">
-              <div>Speech Summarizer</div>
-              <div>A mobile app that summarizes long meetings into short meeting summaries. Winner of Best Mobile Hack at Ignition Hacks 2023</div>
+            <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+              <Image
+                src="/speechsummarizer.png"
+                alt="Speech Summarizer Banner"
+                width={400}
+                height={400}
+              />
+              <div className="mx-4">
+                <div>Speech Summarizer</div>
+                <div>
+                  A mobile app that summarizes long meetings into short meeting
+                  summaries. Winner of Best Mobile Hack at Ignition Hacks 2023
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col w-80 shrink-0">
-              <div>Website</div>
-              <div>A website to display myself, skills and projects</div>
+            <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+              <Image
+                src="/website.png"
+                alt="Website Banner"
+                width={400}
+                height={400}
+              />
+              <div className="mx-4">
+                <div>Website</div>
+                <div>A website to display myself, skills and projects</div>
+              </div>
             </div>
           </div>
         </div>
