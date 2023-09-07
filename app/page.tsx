@@ -7,7 +7,7 @@ export default function Home() {
       <div className="sticky top-0 max-h-0">
         <Navbar />
       </div>
-      <div className="flex justify-center items-center h-screen" id="Home">
+      <div className="flex justify-center items-center h-screen" id="home">
         <div className="flex flex-col items-start text-8xl gap-2 m-4">
           <div>Conrad</div>
           <div>Mo</div>
@@ -19,9 +19,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-around gap-8 mx-8">
+      <div className="flex h-screen justify-around gap-8 mx-8" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
-          <div className="text-8xl" id="AboutMe">About Me</div>
+          <div className="text-8xl">About Me</div>
           <div className="max-w-lg text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
@@ -37,7 +37,58 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <Image src="/pfp.jpg" alt="Profile picture" width={400} height={400}/>
+          <Image
+            src="/pfp.jpg"
+            alt="Profile picture"
+            width={400}
+            height={400}
+          />
+        </div>
+      </div>
+      <div className="flex h-screen justify-center items-center" id="skills">
+        <div className="flex flex-col justify-start gap-4">
+          <div className="text-8xl">Skills</div>
+          <div className="flex gap-10">
+            <div className="flex flex-col text-3xl gap-2">
+              <div className="text-xl">Programming</div>
+              <div className="text-ctp-subtext1 gap-2 flex flex-col">
+                <div>Python</div>
+                <div>C</div>
+                <div>Java</div>
+                <div>Dart</div>
+                <div>HTML/CSS</div>
+                <div>Javascript/Typescript</div>
+                <div>Bash</div>
+                <div>Rust</div>
+                <div>SQL</div>
+              </div>
+            </div>
+            <div className="flex flex-col text-3xl gap-2">
+              <div className="text-xl">Frameworks/Libraries</div>
+              <div className="text-ctp-subtext1 gap-2 flex flex-col">
+                <div>Flutter</div>
+                <div>React</div>
+                <div>Node JS</div>
+                <div>Riverpod</div>
+                <div>Tailwind CSS</div>
+                <div>CI/CD</div>
+              </div>
+            </div>
+            <div className="flex flex-col text-3xl gap-2">
+              <div className="text-xl">Tools</div>
+              <div className="text-ctp-subtext1 gap-2 flex flex-col">
+                <div>Git</div>
+                <div>Github</div>
+                <div>Linux</div>
+                <div>Docker</div>
+                <div>Firebase</div>
+                <div>Postman</div>
+                <div>AWS</div>
+                <div>GCP</div>
+                <div>Azure</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
