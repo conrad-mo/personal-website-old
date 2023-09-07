@@ -7,7 +7,7 @@ export default function Home() {
       <div className="sticky top-0 max-h-0">
         <Navbar />
       </div>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center items-center h-screen" id="Home">
         <div className="flex flex-col items-start text-8xl gap-2 m-4">
           <div>Conrad</div>
           <div>Mo</div>
@@ -19,9 +19,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-around">
+      <div className="flex h-screen justify-around gap-8 mx-8">
         <div className="flex flex-col justify-center gap-11">
-          <div className="text-8xl">About Me</div>
+          <div className="text-8xl" id="AboutMe">About Me</div>
           <div className="max-w-lg text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
