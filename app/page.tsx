@@ -1,19 +1,21 @@
-import Navbar from '../components/navbar'
+import Navbar from "../components/navbar";
 
 export default function Home() {
   return (
-    <main className='flex flex-col justify-between'>
+    <main className="flex flex-col ctp-latte dark:ctp-mocha">
       <Navbar />
-      <div className='flex mx-16 justify-between'>
-        <div className='flex flex-col items-start text-5xl gap-2'>
-          <h1>Conrad</h1>
-          <h1>Mo</h1>
-        </div>
-        <div className='flex flex-col justify-center'>
-          <h1>Software Developer</h1>
-          <h1>Studying CS @ University of Toronto</h1>
+      <div className="">
+        <div className="flex mx-16 justify-between">
+          <div className="flex flex-col items-start text-5xl gap-2">
+            <div>Conrad</div>
+            <div>Mo</div>
+          </div>
+          <div className="flex flex-col justify-center">
+            <div className="text-ctp-rosewater">Software Developer</div>
+            <div>Studying CS @ University of Toronto</div>
+          </div>
         </div>
       </div>
     </main>
-  )
+  );
 }
