@@ -19,16 +19,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-around gap-8 mx-8" id="aboutme">
+      <div className="flex h-screen justify-center gap-28 mx-8" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
           <div className="text-6xl">About Me</div>
-          <div className="max-w-lg text-ctp-subtext1">
+          <div className="max-w-md text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
             passions. Music, in particular, holds a special place in my heart,
             allowing me to express myself in unique ways.
           </div>
-          <div className="max-w-lg text-ctp-subtext1">
+          <div className="max-w-md text-ctp-subtext1">
             When I&apos;m not immersed in the world of music and coding, I enjoy
             dining out with friends and exploring Toronto&apos;s diverse
             culinary offerings. Food is a wonderful way to connect, but my true
@@ -48,7 +48,7 @@ export default function Home() {
       <div className="flex h-screen justify-center items-center" id="skills">
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-36">
+          <div className="flex gap-36 flex-wrap flex-shrink">
             <div className="flex flex-col text-3xl gap-2">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
@@ -64,7 +64,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2">
-              <div className="text-xl text-ctp-yellow">Frameworks/Libraries</div>
+              <div className="text-xl text-ctp-yellow">
+                Frameworks/Libraries
+              </div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
                 <div>Flutter</div>
                 <div>React</div>
@@ -87,6 +89,33 @@ export default function Home() {
                 <div>GCP</div>
                 <div>Azure</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex h-screen justify-center items-center" id="projects">
+        <div className="flex flex-col justify-start gap-8 m-8">
+          <div className="text-6xl">Projects</div>
+          <div className="flex flex-wrap gap-8">
+            <div className="flex flex-col w-80 shrink-0">
+              <div>UTSC Geoguessr</div>
+              <div>A game built with python and tkinter that aims to help new students learn the campus. Submission for HTV 7</div>
+            </div>
+            <div className="flex flex-col w-80 shrink-0">
+              <div>Retina</div>
+              <div>A desktop app that focuses on helping people explore their surroudings by providing definitions of objects around them. Submission for UoftHacksX</div>
+            </div>
+            <div className="flex flex-col w-80 shrink-0">
+              <div>Viridian</div>
+              <div>A mobile app for iOS and Android that allows users to talk to each other</div>
+            </div>
+            <div className="flex flex-col w-80 shrink-0">
+              <div>Speech Summarizer</div>
+              <div>A mobile app that summarizes long meetings into short meeting summaries. Winner of Best Mobile Hack at Ignition Hacks 2023</div>
+            </div>
+            <div className="flex flex-col w-80 shrink-0">
+              <div>Website</div>
+              <div>A website to display myself, skills and projects</div>
             </div>
           </div>
         </div>

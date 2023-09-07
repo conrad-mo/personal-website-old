@@ -9,10 +9,12 @@ export default function Navbar() {
       <Link href="#aboutme">
         <button className="m-4">About</button>
       </Link>
-      <Link href='#skills'>
+      <Link href="#skills">
         <button className="m-4">Skills</button>
       </Link>
-      <button className="m-4">Projects</button>
+      <Link href="#projects">
+        <button className="m-4">Projects</button>
+      </Link>
       <div className="w-8"></div>
     </main>
   );
