@@ -37,15 +37,20 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <Image
-            src="/pfp.jpg"
-            alt="Profile picture"
-            width={400}
-            height={400}
-          />
+          <div className="flex items-center shrink rounded-full overflow-hidden w-[400px] h-[400px]">
+            <Image
+              src="/pfp.jpg"
+              alt="Profile picture"
+              width={400}
+              height={400}
+            />
+          </div>
         </div>
       </div>
-      <div className="flex h-screen justify-center items-center min-h-screen" id="skills">
+      <div
+        className="flex h-screen justify-center items-center min-h-screen"
+        id="skills"
+      >
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
           <div className="flex gap-36 flex-wrap flex-shrink">
