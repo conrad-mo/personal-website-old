@@ -48,12 +48,12 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="flex h-screen justify-center items-center min-h-screen"
+        className="flex h-screen justify-center items-center my-8"
         id="skills"
       >
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-36 flex-wrap flex-shrink">
+          <div className="flex gap-36 flex-shrink">
             <div className="flex flex-col text-3xl gap-2">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
@@ -99,9 +99,9 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center" id="projects">
-        <div className="flex flex-col justify-start gap-8 m-32">
-          <div className="text-6xl">Projects</div>
-          <div className="flex flex-wrap gap-8">
+        <div className="flex flex-col justify-start gap-8 m-32 max-w-5xl">
+          <div className="text-6xl ">Projects</div>
+          <div className="flex flex-wrap gap-8 w-full">
             <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/utscgeoguessr.jpg"
