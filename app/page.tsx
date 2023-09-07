@@ -75,7 +75,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2">
-              <div className="text-xl text-ctp-peach">Tools</div>
+              <div className="text-xl text-ctp-blue">Tools</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
                 <div>Git</div>
                 <div>Github</div>
