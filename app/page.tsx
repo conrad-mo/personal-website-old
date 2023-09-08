@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="ctp-latte dark:ctp-mocha relative">
+    <main className="ctp-latte dark:ctp-mocha flex lg:relative flex-col items-center lg:items-stretch">
       <div className="sticky top-0 max-h-0">
         <Navbar />
       </div>
-      <div className="flex justify-center items-center h-screen" id="home">
-        <div className="flex flex-col items-start text-8xl gap-2 m-4">
+      <div className="flex justify-center items-center min-h-screen" id="home">
+        <div className="flex flex-col items-start text-8xl gap-2 m-16 lg:m-4">
           <div>Conrad</div>
           <div>Mo</div>
           <div className="flex flex-col text-5xl my-8 gap-6">
@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-center gap-44 mx-8" id="aboutme">
+      <div className="flex min-h-screen justify-center gap-16 lg:gap-[170px] mx-8 flex-col-reverse lg:flex-row items-center" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
           <div className="text-6xl">About Me</div>
           <div className="max-w-md text-ctp-subtext1">
@@ -37,7 +37,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <div className="flex items-center shrink rounded-full overflow-hidden w-[400px] h-[400px]">
+          <div className="flex items-center shrink basis-auto rounded-full overflow-hidden w-[400px] h-[400px]">
             <Image
               src="/pfp.jpg"
               alt="Profile picture"
@@ -49,12 +49,12 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="flex h-screen justify-center items-center my-8"
+        className="flex min-h-screen justify-center items-center my-8"
         id="skills"
       >
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-48 flex-shrink">
+          <div className="flex gap-48 flex-shrink justify-between">
             <div className="flex flex-col text-3xl gap-2">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
