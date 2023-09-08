@@ -23,7 +23,7 @@ export default function Home() {
         className="flex min-h-screen justify-center items-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row py-16 lg:p-0"
         id="aboutme"
       >
-        <div className="flex flex-col justify-center items-center lg:items-start gap-11">
+        <div className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-11">
           <div className="text-5xl lg:text-6xl">About Me</div>
           <div className="lg:max-w-md text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
