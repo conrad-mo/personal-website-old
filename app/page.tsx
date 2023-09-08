@@ -1,5 +1,8 @@
+"use client";
 import Navbar from "../components/navbar";
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   return (
@@ -9,36 +12,51 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center min-h-screen" id="home">
         <div className="flex flex-col items-start text-6xl lg:text-8xl gap-2 m-16 lg:m-4">
-          <div>Conrad</div>
-          <div>Mo</div>
-          <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
-            <div className="text-ctp-rosewater">Software Developer</div>
-            <div className="text-ctp-lavender">
-              Studying CS @ University of Toronto
+          <motion.div
+            initial="hide"
+            whileInView="show"
+            exit="hidden"
+            variants={containerVariants}
+          >
+            <motion.div variants={fadeIn}>Conrad</motion.div>
+            <motion.div variants={fadeIn}>Mo</motion.div>
+            <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
+              <motion.div className="text-ctp-rosewater" variants={fadeIn}>
+                Software Developer
+              </motion.div>
+              <motion.div className="text-ctp-lavender" variants={fadeIn}>
+                Studying CS @ University of Toronto
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div
         className="flex min-h-screen justify-center items-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row py-16 lg:p-0"
         id="aboutme"
       >
-        <div className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-11">
-          <div className="text-5xl lg:text-6xl">About Me</div>
-          <div className="lg:max-w-md text-ctp-subtext1">
-            Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
-            University of Toronto. Coding and playing the piano are my two main
-            passions. Music, in particular, holds a special place in my heart,
-            allowing me to express myself in unique ways.
-          </div>
-          <div className="lg:max-w-md text-ctp-subtext1">
-            When I&apos;m not immersed in the world of music and coding, I enjoy
-            dining out with friends and exploring Toronto&apos;s diverse
-            culinary offerings. Food is a wonderful way to connect, but my true
-            love is the piano. If you&apos;re as passionate about music and
-            enjoy good company, let&apos;s connect and share our stories!
-          </div>
-        </div>
+          <motion.div
+            initial="hide"
+            whileInView="show"
+            exit="hidden"
+            variants={containerVariants}
+            className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-11"
+          >
+            <motion.div className="text-5xl lg:text-6xl" variants={fadeIn}>About Me</motion.div>
+            <motion.div className="lg:max-w-md text-ctp-subtext1" variants={fadeIn}>
+              Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
+              University of Toronto. Coding and playing the piano are my two
+              main passions. Music, in particular, holds a special place in my
+              heart, allowing me to express myself in unique ways.
+            </motion.div>
+            <motion.div className="lg:max-w-md text-ctp-subtext1" variants={fadeIn}>
+              When I&apos;m not immersed in the world of music and coding, I
+              enjoy dining out with friends and exploring Toronto&apos;s diverse
+              culinary offerings. Food is a wonderful way to connect, but my
+              true love is the piano. If you&apos;re as passionate about music
+              and enjoy good company, let&apos;s connect and share our stories!
+            </motion.div>
+          </motion.div>
         <div className="flex items-center">
           <div className="flex items-center shrink basis-auto rounded-full overflow-hidden w-[200px] lg:w-[400px] h-[200px] lg:h-[400px]">
             <Image
@@ -185,3 +203,25 @@ export default function Home() {
     </main>
   );
 }
+
+const fadeIn: Variants = {
+  hide: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  exit: { opacity: 0, transition: { duration: 1 } },
+};
+
+const containerVariants = {
+  show: {
+    transition: {
+      staggerChildren: 0.5, // Delay children by 1 second
+      delayChildren: 0.5, // Start delaying children after 1 second
+    },
+  },
+};
