@@ -40,7 +40,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center">
-          <div className="flex items-center shrink basis-auto rounded-full overflow-hidden w-[400px] h-[400px]">
+          <div className="flex items-center shrink basis-auto rounded-full overflow-hidden w-[200px] lg:w-[400px] h-[200px] lg:h-[400px]">
             <Image
               src="/pfp.jpg"
               alt="Profile picture"
@@ -57,7 +57,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-24 md:gap-32 lg:gap-48 justify-center lg:justify-between flex-wrap">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
             <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center py-16 lg:p-0" id="projects">
+      <div className="flex justify-center items-center p-16" id="projects">
         <div className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl">
           <div className="text-6xl ">Projects</div>
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
