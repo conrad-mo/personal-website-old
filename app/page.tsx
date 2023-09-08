@@ -95,9 +95,9 @@ export default function Home() {
           initial="hide"
           whileInView="show"
           exit="hidden"
-          variants={containerVariants}
+          variants={containerVariantsFast}
         >
-          <motion.div variants={fadeIn} className="text-5xl lg:text-6xl">
+          <motion.div variants={fadeInFast} className="text-5xl lg:text-6xl">
             Skills
           </motion.div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
@@ -106,44 +106,44 @@ export default function Home() {
                 Programming
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
-                <motion.div variants={fadeIn}>Python</motion.div>
-                <motion.div variants={fadeIn}>C</motion.div>
-                <motion.div variants={fadeIn}>Java</motion.div>
-                <motion.div variants={fadeIn}>Dart</motion.div>
-                <motion.div variants={fadeIn}>HTML/CSS</motion.div>
-                <motion.div variants={fadeIn}>Javascript/Typescript</motion.div>
-                <motion.div variants={fadeIn}>Bash</motion.div>
-                <motion.div variants={fadeIn}>Rust</motion.div>
-                <motion.div variants={fadeIn}>SQL</motion.div>
+                <motion.div variants={fadeInFast}>Python</motion.div>
+                <motion.div variants={fadeInFast}>C</motion.div>
+                <motion.div variants={fadeInFast}>Java</motion.div>
+                <motion.div variants={fadeInFast}>Dart</motion.div>
+                <motion.div variants={fadeInFast}>HTML/CSS</motion.div>
+                <motion.div variants={fadeInFast}>Javascript/Typescript</motion.div>
+                <motion.div variants={fadeInFast}>Bash</motion.div>
+                <motion.div variants={fadeInFast}>Rust</motion.div>
+                <motion.div variants={fadeInFast}>SQL</motion.div>
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
-              <motion.div variants={fadeIn} className="text-xl text-ctp-yellow">
+              <motion.div variants={fadeInFast} className="text-xl text-ctp-yellow">
                 Frameworks/Libraries
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
-                <motion.div variants={fadeIn}>Flutter</motion.div>
-                <motion.div variants={fadeIn}>React</motion.div>
-                <motion.div variants={fadeIn}>Node JS</motion.div>
-                <motion.div variants={fadeIn}>Riverpod</motion.div>
-                <motion.div variants={fadeIn}>Tailwind CSS</motion.div>
-                <motion.div variants={fadeIn}>CI/CD</motion.div>
+                <motion.div variants={fadeInFast}>Flutter</motion.div>
+                <motion.div variants={fadeInFast}>React</motion.div>
+                <motion.div variants={fadeInFast}>Node JS</motion.div>
+                <motion.div variants={fadeInFast}>Riverpod</motion.div>
+                <motion.div variants={fadeInFast}>Tailwind CSS</motion.div>
+                <motion.div variants={fadeInFast}>CI/CD</motion.div>
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
-              <motion.div variants={fadeIn} className="text-xl text-ctp-green">
+              <motion.div variants={fadeInFast} className="text-xl text-ctp-green">
                 Tools
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
-                <motion.div variants={fadeIn}>Git</motion.div>
-                <motion.div variants={fadeIn}>Github</motion.div>
-                <motion.div variants={fadeIn}>Linux</motion.div>
-                <motion.div variants={fadeIn}>Docker</motion.div>
-                <motion.div variants={fadeIn}>Firebase</motion.div>
-                <motion.div variants={fadeIn}>Postman</motion.div>
-                <motion.div variants={fadeIn}>AWS</motion.div>
-                <motion.div variants={fadeIn}>GCP</motion.div>
-                <motion.div variants={fadeIn}>Azure</motion.div>
+                <motion.div variants={fadeInFast}>Git</motion.div>
+                <motion.div variants={fadeInFast}>Github</motion.div>
+                <motion.div variants={fadeInFast}>Linux</motion.div>
+                <motion.div variants={fadeInFast}>Docker</motion.div>
+                <motion.div variants={fadeInFast}>Firebase</motion.div>
+                <motion.div variants={fadeInFast}>Postman</motion.div>
+                <motion.div variants={fadeInFast}>AWS</motion.div>
+                <motion.div variants={fadeInFast}>GCP</motion.div>
+                <motion.div variants={fadeInFast}>Azure</motion.div>
               </div>
             </div>
           </div>
@@ -249,7 +249,27 @@ const fadeIn: Variants = {
       duration: 0.25,
     },
   },
-  exit: { opacity: 0, transition: { duration: 1 } },
+};
+
+const fadeInFast: Variants = {
+  hide: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      duration: 0.1,
+    },
+  },
+};
+
+const containerVariantsFast = {
+  show: {
+    transition: {
+      staggerChildren: 0.1, // Delay children by 1 second
+      delayChildren: 0.1, // Start delaying children after 1 second
+    },
+  },
 };
 
 const containerVariants = {
