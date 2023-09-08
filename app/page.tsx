@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex min-h-screen justify-center gap-16 lg:gap-[170px] mx-8 flex-col-reverse lg:flex-row items-center" id="aboutme">
+      <div className="flex min-h-screen justify-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row items-center p-32 lg:p-0" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
           <div className="text-6xl">About Me</div>
           <div className="max-w-md text-ctp-subtext1">
