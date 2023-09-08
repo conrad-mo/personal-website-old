@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex h-screen justify-center gap-28 mx-8" id="aboutme">
+      <div className="flex h-screen justify-center gap-44 mx-8" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
           <div className="text-6xl">About Me</div>
           <div className="max-w-md text-ctp-subtext1">
@@ -41,6 +41,7 @@ export default function Home() {
             <Image
               src="/pfp.jpg"
               alt="Profile picture"
+              priority={true}
               width={400}
               height={400}
             />
@@ -53,7 +54,7 @@ export default function Home() {
       >
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-36 flex-shrink">
+          <div className="flex gap-48 flex-shrink">
             <div className="flex flex-col text-3xl gap-2">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
@@ -99,7 +100,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center items-center" id="projects">
-        <div className="flex flex-col justify-start gap-8 m-32 max-w-5xl">
+        <div className="flex flex-col justify-start gap-8 max-w-5xl">
           <div className="text-6xl ">Projects</div>
           <div className="flex flex-wrap gap-8 w-full">
             <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
