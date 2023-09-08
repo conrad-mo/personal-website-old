@@ -8,10 +8,10 @@ export default function Home() {
         <Navbar />
       </div>
       <div className="flex justify-center items-center min-h-screen" id="home">
-        <div className="flex flex-col items-start text-8xl gap-2 m-16 lg:m-4">
+        <div className="flex flex-col items-start text-6xl lg:text-8xl gap-2 m-16 lg:m-4">
           <div>Conrad</div>
           <div>Mo</div>
-          <div className="flex flex-col text-5xl my-8 gap-6">
+          <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
             <div className="text-ctp-rosewater">Software Developer</div>
             <div className="text-ctp-lavender">
               Studying CS @ University of Toronto
@@ -24,7 +24,7 @@ export default function Home() {
         id="aboutme"
       >
         <div className="flex flex-col justify-center items-center lg:items-start gap-11">
-          <div className="text-6xl">About Me</div>
+          <div className="text-5xl lg:text-6xl">About Me</div>
           <div className="lg:max-w-md text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
@@ -56,7 +56,7 @@ export default function Home() {
         id="skills"
       >
         <div className="flex flex-col items-center lg:items-start gap-4">
-          <div className="text-6xl">Skills</div>
+          <div className="text-5xl lg:text-6xl">Skills</div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
             <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
               <div className="text-xl text-ctp-mauve">Programming</div>
@@ -104,7 +104,7 @@ export default function Home() {
       </div>
       <div className="flex justify-center items-center p-16" id="projects">
         <div className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl">
-          <div className="text-6xl ">Projects</div>
+          <div className="text-5xl lg:text-6xl">Projects</div>
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
             <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
