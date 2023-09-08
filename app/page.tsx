@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="ctp-latte dark:ctp-mocha flex lg:relative flex-col items-center lg:items-stretch">
+    <main className="ctp-latte dark:ctp-mocha flex lg:relative flex-col">
       <div className="sticky top-0 max-h-0">
         <Navbar />
       </div>
@@ -19,16 +19,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex min-h-screen justify-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row items-center p-32 lg:p-0" id="aboutme">
+      <div className="flex min-h-screen justify-center items-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row py-32 lg:p-0" id="aboutme">
         <div className="flex flex-col justify-center gap-11">
           <div className="text-6xl">About Me</div>
-          <div className="max-w-md text-ctp-subtext1">
+          <div className="lg:max-w-md text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
             passions. Music, in particular, holds a special place in my heart,
             allowing me to express myself in unique ways.
           </div>
-          <div className="max-w-md text-ctp-subtext1">
+          <div className="lg:max-w-md text-ctp-subtext1">
             When I&apos;m not immersed in the world of music and coding, I enjoy
             dining out with friends and exploring Toronto&apos;s diverse
             culinary offerings. Food is a wonderful way to connect, but my true
@@ -54,7 +54,7 @@ export default function Home() {
       >
         <div className="flex flex-col justify-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-48 flex-shrink justify-between">
+          <div className="flex gap-48 flex-shrink justify-between flex-wrap">
             <div className="flex flex-col text-3xl gap-2">
               <div className="text-xl text-ctp-mauve">Programming</div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col">
