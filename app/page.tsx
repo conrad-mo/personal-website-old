@@ -19,8 +19,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex min-h-screen justify-center items-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row py-32 lg:p-0" id="aboutme">
-        <div className="flex flex-col justify-center gap-11">
+      <div
+        className="flex min-h-screen justify-center items-center gap-16 lg:gap-[170px] mx-16 flex-col-reverse lg:flex-row py-16 lg:p-0"
+        id="aboutme"
+      >
+        <div className="flex flex-col justify-center items-center lg:items-start gap-11">
           <div className="text-6xl">About Me</div>
           <div className="lg:max-w-md text-ctp-subtext1">
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
@@ -49,15 +52,15 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="flex min-h-screen justify-center items-center my-8"
+        className="flex min-h-screen justify-center items-center my-8 py-16 lg:p-0"
         id="skills"
       >
-        <div className="flex flex-col justify-start gap-4">
+        <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="text-6xl">Skills</div>
-          <div className="flex gap-48 flex-shrink justify-between flex-wrap">
-            <div className="flex flex-col text-3xl gap-2">
+          <div className="flex gap-24 md:gap-32 lg:gap-48 justify-center lg:justify-between flex-wrap">
+            <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
               <div className="text-xl text-ctp-mauve">Programming</div>
-              <div className="text-ctp-subtext0 gap-2 flex flex-col">
+              <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
                 <div>Python</div>
                 <div>C</div>
                 <div>Java</div>
@@ -69,11 +72,11 @@ export default function Home() {
                 <div>SQL</div>
               </div>
             </div>
-            <div className="flex flex-col text-3xl gap-2">
+            <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
               <div className="text-xl text-ctp-yellow">
                 Frameworks/Libraries
               </div>
-              <div className="text-ctp-subtext0 gap-2 flex flex-col">
+              <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
                 <div>Flutter</div>
                 <div>React</div>
                 <div>Node JS</div>
@@ -82,9 +85,9 @@ export default function Home() {
                 <div>CI/CD</div>
               </div>
             </div>
-            <div className="flex flex-col text-3xl gap-2">
+            <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
               <div className="text-xl text-ctp-green">Tools</div>
-              <div className="text-ctp-subtext0 gap-2 flex flex-col">
+              <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
                 <div>Git</div>
                 <div>Github</div>
                 <div>Linux</div>
@@ -99,10 +102,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center" id="projects">
-        <div className="flex flex-col justify-start gap-8 max-w-5xl">
+      <div className="flex justify-center items-center py-16 lg:p-0" id="projects">
+        <div className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl">
           <div className="text-6xl ">Projects</div>
-          <div className="flex flex-wrap gap-8 w-full">
+          <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
             <div className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/utscgeoguessr.jpg"
