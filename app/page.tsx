@@ -168,6 +168,7 @@ export default function Home() {
               <Image
                 src="/utscgeoguessr.jpg"
                 alt="UTSC Geoguessr Banner"
+                priority={true}
                 width={400}
                 height={400}
               />
@@ -183,6 +184,7 @@ export default function Home() {
               <Image
                 src="/retina.png"
                 alt="Retina Banner"
+                priority={true}
                 width={400}
                 height={400}
               />
@@ -199,6 +201,7 @@ export default function Home() {
               <Image
                 src="/viridian.png"
                 alt="Viridian Banner"
+                priority={true}
                 width={400}
                 height={400}
               />
@@ -214,6 +217,7 @@ export default function Home() {
               <Image
                 src="/speechsummarizer.png"
                 alt="Speech Summarizer Banner"
+                priority={true}
                 width={400}
                 height={400}
               />
@@ -229,6 +233,7 @@ export default function Home() {
               <Image
                 src="/website.png"
                 alt="Website Banner"
+                priority={true}
                 width={400}
                 height={400}
               />
