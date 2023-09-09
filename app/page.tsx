@@ -19,13 +19,13 @@ export default function Home() {
             exit="hidden"
             variants={containerVariants}
           >
-            <motion.div variants={fadeIn}>Conrad</motion.div>
-            <motion.div variants={fadeIn}>Mo</motion.div>
+            <motion.div variants={fadeInLeft}>Conrad</motion.div>
+            <motion.div variants={fadeInLeft}>Mo</motion.div>
             <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
-              <motion.div className="text-ctp-rosewater" variants={fadeIn}>
+              <motion.div className="text-ctp-rosewater" variants={fadeInLeft}>
                 Software Developer
               </motion.div>
-              <motion.div className="text-ctp-lavender" variants={fadeIn}>
+              <motion.div className="text-ctp-lavender" variants={fadeInLeft}>
                 Studying CS @ University of Toronto
               </motion.div>
             </div>
@@ -49,7 +49,7 @@ export default function Home() {
           </motion.div>
           <motion.div
             className="lg:max-w-md text-ctp-subtext1"
-            variants={fadeIn}
+            variants={fadeInLeft}
           >
             Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
             University of Toronto. Coding and playing the piano are my two main
@@ -58,7 +58,7 @@ export default function Home() {
           </motion.div>
           <motion.div
             className="lg:max-w-md text-ctp-subtext1"
-            variants={fadeIn}
+            variants={fadeInLeft}
           >
             When I&apos;m not immersed in the world of music and coding, I enjoy
             dining out with friends and exploring Toronto&apos;s diverse
@@ -106,7 +106,7 @@ export default function Home() {
           </motion.div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
             <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
-              <motion.div variants={fadeIn} className="text-xl text-ctp-mauve">
+              <motion.div variants={fadeInFast} className="text-xl text-ctp-mauve">
                 Programming
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
@@ -162,9 +162,9 @@ export default function Home() {
           exit="hidden"
           variants={containerVariants}
         >
-          <motion.div variants={fadeIn} className="text-5xl lg:text-6xl">Projects</motion.div>
+          <motion.div variants={fadeInDown} className="text-5xl lg:text-6xl">Projects</motion.div>
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
-            <motion.div variants={fadeIn} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/utscgeoguessr.jpg"
                 alt="UTSC Geoguessr Banner"
@@ -179,7 +179,7 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeIn} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/retina.png"
                 alt="Retina Banner"
@@ -195,7 +195,7 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeIn} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/viridian.png"
                 alt="Viridian Banner"
@@ -210,7 +210,7 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeIn} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/speechsummarizer.png"
                 alt="Speech Summarizer Banner"
@@ -225,7 +225,7 @@ export default function Home() {
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeIn} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
+            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
               <Image
                 src="/website.png"
                 alt="Website Banner"
@@ -244,6 +244,34 @@ export default function Home() {
   );
 }
 
+const fadeInLeft: Variants = {
+  hide: {
+    opacity: 0,
+    x: -20,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const fadeInDown: Variants = {
+  hide: {
+    opacity: 0,
+    y: 10,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const fadeIn: Variants = {
   hide: {
     opacity: 0,
@@ -259,9 +287,11 @@ const fadeIn: Variants = {
 const fadeInFast: Variants = {
   hide: {
     opacity: 0,
+    y: 10,
   },
   show: {
     opacity: 1,
+    y: 0,
     transition: {
       duration: 0.25,
     },
