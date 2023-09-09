@@ -15,6 +15,7 @@ export default function Home() {
           <motion.div
             initial="hide"
             whileInView="show"
+            viewport={{once: true}}
             exit="hidden"
             variants={containerVariants}
           >
@@ -38,6 +39,7 @@ export default function Home() {
         <motion.div
           initial="hide"
           whileInView="show"
+          viewport={{once: true}}
           exit="hidden"
           variants={containerVariants}
           className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-11"
@@ -68,6 +70,7 @@ export default function Home() {
         <motion.div
           initial="hide"
           whileInView="show"
+          viewport={{once: true}}
           exit="hidden"
           variants={containerVariants}
           className="flex items-center"
@@ -94,6 +97,7 @@ export default function Home() {
           className="flex flex-col items-center lg:items-start gap-4"
           initial="hide"
           whileInView="show"
+          viewport={{once: true}}
           exit="hidden"
           variants={containerVariantsFast}
         >
@@ -154,6 +158,7 @@ export default function Home() {
           className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl"
           initial="hide"
           whileInView="show"
+          viewport={{once: true}}
           exit="hidden"
           variants={containerVariants}
         >
@@ -246,7 +251,7 @@ const fadeIn: Variants = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.25,
+      duration: 0.5,
     },
   },
 };
@@ -258,7 +263,7 @@ const fadeInFast: Variants = {
   show: {
     opacity: 1,
     transition: {
-      duration: 0.1,
+      duration: 0.25,
     },
   },
 };
@@ -266,8 +271,8 @@ const fadeInFast: Variants = {
 const containerVariantsFast = {
   show: {
     transition: {
-      staggerChildren: 0.1, // Delay children by 1 second
-      delayChildren: 0.1, // Start delaying children after 1 second
+      staggerChildren: 0.25, // Delay children by 1 second
+      delayChildren: 0.25, // Start delaying children after 1 second
     },
   },
 };
@@ -275,8 +280,8 @@ const containerVariantsFast = {
 const containerVariants = {
   show: {
     transition: {
-      staggerChildren: 0.25, // Delay children by 1 second
-      delayChildren: 0.25, // Start delaying children after 1 second
+      staggerChildren: 0.5, // Delay children by 1 second
+      delayChildren: 0.5, // Start delaying children after 1 second
     },
   },
 };
