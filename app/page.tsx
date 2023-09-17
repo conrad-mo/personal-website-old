@@ -15,7 +15,7 @@ export default function Home() {
           <motion.div
             initial="hide"
             whileInView="show"
-            viewport={{once: true}}
+            viewport={{ once: true }}
             exit="hidden"
             variants={containerVariants}
           >
@@ -39,7 +39,7 @@ export default function Home() {
         <motion.div
           initial="hide"
           whileInView="show"
-          viewport={{once: true}}
+          viewport={{ once: true }}
           exit="hidden"
           variants={containerVariants}
           className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-11"
@@ -70,7 +70,7 @@ export default function Home() {
         <motion.div
           initial="hide"
           whileInView="show"
-          viewport={{once: true}}
+          viewport={{ once: true }}
           exit="hidden"
           variants={containerVariants}
           className="flex items-center"
@@ -97,7 +97,7 @@ export default function Home() {
           className="flex flex-col items-center lg:items-start gap-4"
           initial="hide"
           whileInView="show"
-          viewport={{once: true}}
+          viewport={{ once: true }}
           exit="hidden"
           variants={containerVariantsFast}
         >
@@ -106,7 +106,10 @@ export default function Home() {
           </motion.div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
             <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
-              <motion.div variants={fadeInFast} className="text-xl text-ctp-mauve">
+              <motion.div
+                variants={fadeInFast}
+                className="text-xl text-ctp-mauve"
+              >
                 Programming
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
@@ -115,14 +118,19 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>Java</motion.div>
                 <motion.div variants={fadeInFast}>Dart</motion.div>
                 <motion.div variants={fadeInFast}>HTML/CSS</motion.div>
-                <motion.div variants={fadeInFast}>Javascript/Typescript</motion.div>
+                <motion.div variants={fadeInFast}>
+                  Javascript/Typescript
+                </motion.div>
                 <motion.div variants={fadeInFast}>Bash</motion.div>
                 <motion.div variants={fadeInFast}>Rust</motion.div>
                 <motion.div variants={fadeInFast}>SQL</motion.div>
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
-              <motion.div variants={fadeInFast} className="text-xl text-ctp-yellow">
+              <motion.div
+                variants={fadeInFast}
+                className="text-xl text-ctp-yellow"
+              >
                 Frameworks/Libraries
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
@@ -135,7 +143,10 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
-              <motion.div variants={fadeInFast} className="text-xl text-ctp-green">
+              <motion.div
+                variants={fadeInFast}
+                className="text-xl text-ctp-green"
+              >
                 Tools
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
@@ -158,89 +169,147 @@ export default function Home() {
           className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl"
           initial="hide"
           whileInView="show"
-          viewport={{once: true}}
+          viewport={{ once: true }}
           exit="hidden"
           variants={containerVariants}
         >
-          <motion.div variants={fadeInDown} className="text-5xl lg:text-6xl">Projects</motion.div>
+          <motion.div variants={fadeInDown} className="text-5xl lg:text-6xl">
+            Projects
+          </motion.div>
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
-            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
-              <Image
-                src="/utscgeoguessr.jpg"
-                alt="UTSC Geoguessr Banner"
-                priority={true}
-                width={400}
-                height={400}
-              />
-              <div className="mx-4">
-                <div>UTSC Geoguessr</div>
-                <div>
-                  A game built with python and tkinter that aims to help new
-                  students learn the campus. Submission for HTV 7
+            <motion.div
+              variants={fadeInDown}
+              className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/conrad-mo/geoguesser-utsc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/utscgeoguessr.jpg"
+                  alt="UTSC Geoguessr Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>UTSC Geoguessr</div>
+                  <div>
+                    A game built with python and tkinter that aims to help new
+                    students learn the campus. Submission for HTV 7
+                  </div>
                 </div>
-              </div>
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
             </motion.div>
-            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
-              <Image
-                src="/retina.png"
-                alt="Retina Banner"
-                priority={true}
-                width={400}
-                height={400}
-              />
-              <div className="mx-4">
-                <div>Retina</div>
-                <div>
-                  A desktop app that focuses on helping people explore their
-                  surroudings by providing definitions of objects around them.
-                  Submission for UoftHacksX
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/CherylZ4/Retina"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/retina.png"
+                  alt="Retina Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>Retina</div>
+                  <div>
+                    A desktop app that focuses on helping people explore their
+                    surroudings by providing definitions of objects around them.
+                    Submission for UoftHacksX
+                  </div>
                 </div>
-              </div>
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
             </motion.div>
-            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
-              <Image
-                src="/viridian.png"
-                alt="Viridian Banner"
-                priority={true}
-                width={400}
-                height={400}
-              />
-              <div className="mx-4">
-                <div>Viridian</div>
-                <div>
-                  A mobile app for iOS and Android that allows users to talk to
-                  each other
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/conrad-mo/viridian"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/viridian.png"
+                  alt="Viridian Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>Viridian</div>
+                  <div>
+                    A mobile app for iOS and Android that allows users to talk
+                    to each other
+                  </div>
                 </div>
-              </div>
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
             </motion.div>
-            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
-              <Image
-                src="/speechsummarizer.png"
-                alt="Speech Summarizer Banner"
-                priority={true}
-                width={400}
-                height={400}
-              />
-              <div className="mx-4">
-                <div>Speech Summarizer</div>
-                <div>
-                  A mobile app that summarizes long meetings into short meeting
-                  summaries. Winner of Best Mobile Hack at Ignition Hacks 2023
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/eveev26/SpeechSummarizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/speechsummarizer.png"
+                  alt="Speech Summarizer Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>Speech Summarizer</div>
+                  <div>
+                    A mobile app that summarizes long meetings into short
+                    meeting summaries. Winner of Best Mobile Hack at Ignition
+                    Hacks 2023
+                  </div>
                 </div>
-              </div>
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
             </motion.div>
-            <motion.div variants={fadeInDown} className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4">
-              <Image
-                src="/website.png"
-                alt="Website Banner"
-                priority={true}
-                width={400}
-                height={400}
-              />
-              <div className="mx-4">
-                <div>Website</div>
-                <div>A website to display myself, skills and projects</div>
-              </div>
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/conrad-mo/personal-website"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/website.png"
+                  alt="Website Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>Personal Website</div>
+                  <div>A website to display myself, skills and projects</div>
+                </div>
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
             </motion.div>
           </div>
         </motion.div>
