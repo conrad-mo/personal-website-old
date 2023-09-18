@@ -201,7 +201,7 @@ export default function Home() {
                     students learn the campus. Submission for HTV 7
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
@@ -229,7 +229,7 @@ export default function Home() {
                     Submission for UoftHacksX
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
@@ -256,7 +256,7 @@ export default function Home() {
                     to each other
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
@@ -284,7 +284,7 @@ export default function Home() {
                     Hacks 2023
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
@@ -308,7 +308,7 @@ export default function Home() {
                   <div>Personal Website</div>
                   <div>A website to display myself, skills and projects</div>
                 </div>
-                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
           </div>
