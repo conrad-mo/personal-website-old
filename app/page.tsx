@@ -139,6 +139,7 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>Node JS</motion.div>
                 <motion.div variants={fadeInFast}>Riverpod</motion.div>
                 <motion.div variants={fadeInFast}>Tailwind CSS</motion.div>
+                <motion.div variants={fadeInFast}>Axum</motion.div>
                 <motion.div variants={fadeInFast}>CI/CD</motion.div>
               </div>
             </div>
