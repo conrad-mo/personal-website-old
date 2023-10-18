@@ -312,6 +312,30 @@ export default function Home() {
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/conrad-mo/Eventful"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/eventful.png"
+                  alt="Eventful Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4">
+                  <div>Eventful</div>
+                  <div>A mobile app that generates items given an event and optimizes costs of the items for the event. Ranked 14/80 projects at HTV8</div>
+                </div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>
