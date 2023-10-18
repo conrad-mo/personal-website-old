@@ -195,7 +195,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>UTSC Geoguessr</div>
                   <div>
                     A game built with python and tkinter that aims to help new
@@ -222,7 +222,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>Retina</div>
                   <div>
                     A desktop app that focuses on helping people explore their
@@ -250,7 +250,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>Viridian</div>
                   <div>
                     A mobile app for iOS and Android that allows users to talk
@@ -277,7 +277,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>Speech Summarizer</div>
                   <div>
                     A mobile app that summarizes long meetings into short
@@ -305,7 +305,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>Personal Website</div>
                   <div>A website to display myself, skills and projects</div>
                 </div>
@@ -329,7 +329,7 @@ export default function Home() {
                   width={400}
                   height={400}
                 />
-                <div className="mx-4 mb-2">
+                <div className="mx-4 mb-3">
                   <div>Eventful</div>
                   <div>A mobile app that generates items given an event and optimizes costs of the items for the event. Ranked 14th out of 80 projects at HTV8</div>
                 </div>
