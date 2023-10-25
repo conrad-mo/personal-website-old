@@ -8,8 +8,8 @@ import {
 
 export default function Navbar() {
   return (
-    <main className="flex justify-between items-center bg-ctp-base">
-      <div className="flex items-center text-xl ml-8 gap-4">
+    <main className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center bg-ctp-base p-4 lg:p-0">
+      <div className="flex items-center text-xl lg:ml-8 gap-4">
         <a
           href="/Conrad_Mo_resume.pdf"
           target="_blank"
@@ -47,7 +47,7 @@ export default function Navbar() {
           </button>
         </a>
       </div>
-      <div className="flex justify-end items-center text-xl">
+      <div className="flex justify-center lg:justify-end items-center text-xl">
         <ScrollLink
           to="home"
           smooth={true}
@@ -92,7 +92,7 @@ export default function Navbar() {
             Projects
           </button>
         </ScrollLink>
-        <div className="w-8"></div>
+        <div className="lg:w-8"></div>
       </div>
     </main>
   );
