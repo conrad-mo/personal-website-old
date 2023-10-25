@@ -14,6 +14,7 @@ export default function Navbar() {
           href="/Conrad_Mo_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Resume"
         >
           <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoDocumentText />
@@ -23,6 +24,7 @@ export default function Navbar() {
           href="https://www.instagram.com/conrad.mo/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
         >
           <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoInstagram />
@@ -32,6 +34,7 @@ export default function Navbar() {
           href="https://www.linkedin.com/in/conradmo/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Linkedin"
         >
           <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoLinkedin />
@@ -41,6 +44,7 @@ export default function Navbar() {
           href="https://github.com/conrad-mo"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github"
         >
           <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoGithub />
