@@ -1,41 +1,99 @@
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import {
+  IoDocumentText,
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoGithub,
+} from "react-icons/io5";
 
 export default function Navbar() {
   return (
-    <main className="flex justify-end items-center text-xl bg-ctp-base">
-      <ScrollLink to="home" smooth={true} duration={500} className="m-2" id="homebutton">
-        <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
-          Home
-        </button>
-      </ScrollLink>
-      <ScrollLink
-        to="aboutme"
-        smooth={true}
-        duration={500}
-        className="m-2"
-        id="aboutbutton"
-      >
-        <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">About</button>
-      </ScrollLink>
-      <ScrollLink
-        to="skills"
-        smooth={true}
-        duration={500}
-        className="m-2"
-        id="skillsbutton"
-      >
-        <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">Skills</button>
-      </ScrollLink>
-      <ScrollLink
-        to="projects"
-        smooth={true}
-        duration={500}
-        className="m-2"
-        id="projectsbutton"
-      >
-        <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">Projects</button>
-      </ScrollLink>
-      <div className="w-8"></div>
+    <main className="flex justify-between items-center bg-ctp-base">
+      <div className="flex items-center text-xl ml-8 gap-4">
+        <a
+          href="/Conrad_Mo_resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            <IoDocumentText />
+          </button>
+        </a>
+        <a
+          href="https://www.instagram.com/conrad.mo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            <IoLogoInstagram />
+          </button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/conradmo/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            <IoLogoLinkedin />
+          </button>
+        </a>
+        <a
+          href="https://github.com/conrad-mo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            <IoLogoGithub />
+          </button>
+        </a>
+      </div>
+      <div className="flex justify-end items-center text-xl">
+        <ScrollLink
+          to="home"
+          smooth={true}
+          duration={500}
+          className="m-2"
+          id="homebutton"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            Home
+          </button>
+        </ScrollLink>
+        <ScrollLink
+          to="aboutme"
+          smooth={true}
+          duration={500}
+          className="m-2"
+          id="aboutbutton"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            About
+          </button>
+        </ScrollLink>
+        <ScrollLink
+          to="skills"
+          smooth={true}
+          duration={500}
+          className="m-2"
+          id="skillsbutton"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            Skills
+          </button>
+        </ScrollLink>
+        <ScrollLink
+          to="projects"
+          smooth={true}
+          duration={500}
+          className="m-2"
+          id="projectsbutton"
+        >
+          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            Projects
+          </button>
+        </ScrollLink>
+        <div className="w-8"></div>
+      </div>
     </main>
   );
 }
