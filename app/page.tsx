@@ -3,6 +3,7 @@ import Navbar from "../components/navbar";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { useState, useEffect } from "react";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
   return (
@@ -23,7 +24,21 @@ export default function Home() {
             <motion.div variants={fadeInLeft}>Mo</motion.div>
             <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
               <motion.div className="text-ctp-rosewater" variants={fadeInLeft}>
-                Software Developer
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed once, initially
+                    "Software Engineer",
+                    1000,
+                    "Fullstack Developer",
+                    1000,
+                    "DevOps Engineer",
+                    1000,
+                    "Pianist",
+                    1000,
+                  ]}
+                  speed={50}
+                  repeat={Infinity}
+                />
               </motion.div>
               <motion.div className="text-ctp-lavender" variants={fadeInLeft}>
                 Studying CS @ University of Toronto
@@ -331,7 +346,11 @@ export default function Home() {
                 />
                 <div className="mx-4 mb-3">
                   <div>Eventful</div>
-                  <div>A mobile app that generates items given an event and optimizes costs of the items for the event. Ranked 14th out of 80 projects at HTV8</div>
+                  <div>
+                    A mobile app that generates items given an event and
+                    optimizes costs of the items for the event. Ranked 14th out
+                    of 80 projects at HTV8
+                  </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
