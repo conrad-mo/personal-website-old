@@ -16,7 +16,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           aria-label="Resume"
         >
-          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+          <button aria-label="Resume" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoDocumentText />
           </button>
         </a>
@@ -26,7 +26,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           aria-label="Instagram"
         >
-          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+          <button aria-label="Instagram" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoInstagram />
           </button>
         </a>
@@ -36,7 +36,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           aria-label="Linkedin"
         >
-          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+          <button aria-label="Linkedin" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoLinkedin />
           </button>
         </a>
@@ -46,7 +46,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
           aria-label="Github"
         >
-          <button className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+          <button aria-label="Github" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoGithub />
           </button>
         </a>
