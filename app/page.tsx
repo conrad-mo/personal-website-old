@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 export default function Home() {
   return (
     <main className="ctp-latte dark:ctp-mocha flex lg:relative flex-col">
-      <div className="sticky top-0 max-h-0">
+      <div className="sticky top-0 max-h-0 z-10">
         <Navbar />
       </div>
       <div className="flex justify-center items-center min-h-screen" id="home">
