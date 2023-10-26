@@ -5,6 +5,7 @@ import {
   IoLogoLinkedin,
   IoLogoGithub,
 } from "react-icons/io5";
+import { SiD, SiDevpost } from "react-icons/si";
 
 export default function Navbar() {
   return (
@@ -48,6 +49,16 @@ export default function Navbar() {
         >
           <button aria-label="Github" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoGithub />
+          </button>
+        </a>
+        <a
+          href="https://devpost.com/conradmo"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Devpost"
+        >
+          <button aria-label="Github" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
+            <SiDevpost />
           </button>
         </a>
       </div>
