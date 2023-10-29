@@ -20,20 +20,18 @@ export default function Home() {
             exit="hidden"
             variants={containerVariants}
           >
-            <motion.div variants={fadeInLeft}>Conrad</motion.div>
-            <motion.div variants={fadeInLeft}>Mo</motion.div>
+            <motion.div variants={fadeInLeft}>Cole</motion.div>
+            <motion.div variants={fadeInLeft}>Baugh</motion.div>
             <div className="flex flex-col text-4xl lg:text-5xl my-8 gap-6">
               <motion.div className="text-ctp-rosewater" variants={fadeInLeft}>
                 <TypeAnimation
                   sequence={[
                     // Same substring at the start will only be typed once, initially
-                    "Software Engineer",
+                    "Privacy",
                     1000,
-                    "Fullstack Developer",
+                    "Security",
                     1000,
-                    "DevOps Engineer",
-                    1000,
-                    "Pianist",
+                    "Cyclist",
                     1000,
                   ]}
                   speed={50}
@@ -41,7 +39,7 @@ export default function Home() {
                 />
               </motion.div>
               <motion.div className="text-ctp-lavender" variants={fadeInLeft}>
-                Studying CS @ University of Toronto
+                Studying Math and CS @ Arcadia University
               </motion.div>
             </div>
           </motion.div>
@@ -66,20 +64,18 @@ export default function Home() {
             className="lg:max-w-md text-ctp-subtext1"
             variants={fadeInLeft}
           >
-            Hi! I&apos;m Conrad Mo, a Computer Science undergrad at the
-            University of Toronto. Coding and playing the piano are my two main
-            passions. Music, in particular, holds a special place in my heart,
-            allowing me to express myself in unique ways.
+            Hi! I&apos;m Cole Baugh, a Computer Science undergrad at Arcadia  
+            university. I enjoy tinkering with hardware and software as well
+            as learning new things. And I am obsessed with justifying my major
+            in math by applying concepts from my theory classes to anywhere I can.
           </motion.div>
           <motion.div
             className="lg:max-w-md text-ctp-subtext1"
             variants={fadeInLeft}
           >
-            When I&apos;m not immersed in the world of music and coding, I enjoy
-            dining out with friends and exploring Toronto&apos;s diverse
-            culinary offerings. Food is a wonderful way to connect, but my true
-            love is the piano. If you&apos;re as passionate about music and
-            enjoy good company, let&apos;s connect and share our stories!
+            When I am not trying to explain the importance and applications of automita 
+            theory to my friends and family, I am usually running or biking.  I also enjoy
+            competitive gaming, competing in CTF's. 
           </motion.div>
         </motion.div>
         <motion.div
@@ -129,33 +125,11 @@ export default function Home() {
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
                 <motion.div variants={fadeInFast}>Python</motion.div>
-                <motion.div variants={fadeInFast}>C</motion.div>
+                {/* <motion.div variants={fadeInFast}>C</motion.div> %TODO */}
                 <motion.div variants={fadeInFast}>Java</motion.div>
-                <motion.div variants={fadeInFast}>Dart</motion.div>
-                <motion.div variants={fadeInFast}>HTML/CSS</motion.div>
-                <motion.div variants={fadeInFast}>
-                  Javascript/Typescript
-                </motion.div>
                 <motion.div variants={fadeInFast}>Bash</motion.div>
-                <motion.div variants={fadeInFast}>Rust</motion.div>
+                {/* <motion.div variants={fadeInFast}>Rust</motion.div> %TODO*/}
                 <motion.div variants={fadeInFast}>SQL</motion.div>
-              </div>
-            </div>
-            <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
-              <motion.div
-                variants={fadeInFast}
-                className="text-xl text-ctp-yellow"
-              >
-                Frameworks/Libraries
-              </motion.div>
-              <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
-                <motion.div variants={fadeInFast}>Flutter</motion.div>
-                <motion.div variants={fadeInFast}>React</motion.div>
-                <motion.div variants={fadeInFast}>Node JS</motion.div>
-                <motion.div variants={fadeInFast}>Riverpod</motion.div>
-                <motion.div variants={fadeInFast}>Tailwind CSS</motion.div>
-                <motion.div variants={fadeInFast}>Axum</motion.div>
-                <motion.div variants={fadeInFast}>CI/CD</motion.div>
               </div>
             </div>
             <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
@@ -170,11 +144,8 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>Github</motion.div>
                 <motion.div variants={fadeInFast}>Linux</motion.div>
                 <motion.div variants={fadeInFast}>Docker</motion.div>
-                <motion.div variants={fadeInFast}>Firebase</motion.div>
-                <motion.div variants={fadeInFast}>Postman</motion.div>
                 <motion.div variants={fadeInFast}>AWS</motion.div>
-                <motion.div variants={fadeInFast}>GCP</motion.div>
-                <motion.div variants={fadeInFast}>Azure</motion.div>
+                <motion.div variants={fadeInFast}>ProxMox VE</motion.div>
               </div>
             </div>
           </div>
@@ -191,6 +162,7 @@ export default function Home() {
         >
           <motion.div variants={fadeInDown} className="text-5xl lg:text-6xl">
             Projects
+            {/* %TODO replace with my projects */}
           </motion.div>
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
             <motion.div
@@ -214,7 +186,7 @@ export default function Home() {
                   <div>UTSC Geoguessr</div>
                   <div>
                     A game built with python and tkinter that aims to help new
-                    students learn the campus. Submission for HTV 7
+
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>

@@ -1,7 +1,7 @@
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import {
   IoDocumentText,
-  IoLogoInstagram,
+  // IoLogoInstagram,
   IoLogoLinkedin,
   IoLogoGithub,
 } from "react-icons/io5";
@@ -21,7 +21,7 @@ export default function Navbar() {
             <IoDocumentText />
           </button>
         </a>
-        <a
+        {/* <a
           href="https://www.instagram.com/conrad.mo/"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +30,7 @@ export default function Navbar() {
           <button aria-label="Instagram" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <IoLogoInstagram />
           </button>
-        </a>
+        </a> */}
         <a
           href="https://www.linkedin.com/in/conradmo/"
           target="_blank"
@@ -42,7 +42,7 @@ export default function Navbar() {
           </button>
         </a>
         <a
-          href="https://github.com/conrad-mo"
+          href="https://github.com/fedxjk"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Github"
@@ -51,7 +51,7 @@ export default function Navbar() {
             <IoLogoGithub />
           </button>
         </a>
-        <a
+        {/* <a
           href="https://devpost.com/conradmo"
           target="_blank"
           rel="noopener noreferrer"
@@ -60,7 +60,7 @@ export default function Navbar() {
           <button aria-label="Github" className="rounded-lg border-2 border-transparent px-2 py-1 transition-colors hover:border-ctp-text hover:bg-ctp-surface2 active:bg-ctp-surface2/50">
             <SiDevpost />
           </button>
-        </a>
+        </a> */}
       </div>
       <div className="flex justify-center lg:justify-end items-center text-xl">
         <ScrollLink
