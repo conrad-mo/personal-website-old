@@ -180,7 +180,7 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
-      <div className="flex justify-center items-center p-16" id="projects">
+      <div className="flex min-h-screen justify-center items-center p-16" id="projects">
         <motion.div
           className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl"
           initial="hide"
