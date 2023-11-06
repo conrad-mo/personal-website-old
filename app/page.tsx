@@ -360,7 +360,7 @@ export default function Home() {
               className="w-80 border-ctp-mantle border-solid border-4 relative"
             >
               <a
-                href="https://github.com/rtutz/NewHacks2023-"
+                href="https://github.com/rtutz/NewHacks2023-WisdomWhisperer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gap-4 flex flex-col"
