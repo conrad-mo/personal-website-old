@@ -366,7 +366,7 @@ export default function Home() {
                 className="gap-4 flex flex-col"
               >
                 <Image
-                  src="/wisdomwhisperer.png"
+                  src="/wisdomwhisperer.jpg"
                   alt="WisdomWhisperer Banner"
                   priority={true}
                   width={400}
@@ -375,7 +375,8 @@ export default function Home() {
                 <div className="mx-4 mb-3">
                   <div>WisdomWhisperer</div>
                   <div>
-                    A web app that allows students to upload lecture videos to summarize and generate quiz questions. Includes a chatbot that learns from the uploaded content to provide student support with coursework. Winner of the Student Challenge at NewHacks2023
+                    A web app that allows students to upload lecture videos to summarize, 
+                    generate quiz questions, and ask a chatbot for help. Winner of the Student Challenge at NewHacks2023
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
