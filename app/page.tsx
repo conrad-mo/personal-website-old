@@ -355,6 +355,32 @@ export default function Home() {
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
+            <motion.div
+              variants={fadeInDown}
+              className="w-80 border-ctp-mantle border-solid border-4 relative"
+            >
+              <a
+                href="https://github.com/rtutz/NewHacks2023-"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gap-4 flex flex-col"
+              >
+                <Image
+                  src="/wisdomwhisperer.png"
+                  alt="WisdomWhisperer Banner"
+                  priority={true}
+                  width={400}
+                  height={400}
+                />
+                <div className="mx-4 mb-3">
+                  <div>WisdomWhisperer</div>
+                  <div>
+                    A web app that allows students to upload lecture videos to summarize and generate quiz questions. Includes a chatbot that learns from the uploaded content to provide student support with coursework. Winner of the Student Challenge at NewHacks2023
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+              </a>
+            </motion.div>
           </div>
         </motion.div>
       </div>
