@@ -170,84 +170,59 @@ export default function Home() {
               className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4 relative"
             >
               <a
-                href="https://github.com/conrad-mo/geoguesser-utsc"
+                href="/ASTRO_STS.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gap-4 flex flex-col"
               >
                 <Image
-                  src="/utscgeoguessr.jpg"
-                  alt="UTSC Geoguessr Banner"
+                  src="/ASTRO.jpg"
+                  alt="ASTRO project"
                   priority={true}
                   width={400}
                   height={400}
                 />
                 <div className="mx-4 mb-3">
-                  <div>UTSC Geoguessr</div>
+                  <div>ASTRO</div>
                   <div>
-                    A game built with python and tkinter that aims to help new
+                    Arcadia Student Transformed Remote Observatory (ASTRO) 
+                    is an effort to retrofit Arcadia University&apos;s 
+                    observatory built in 1987 to be operated remotely.
 
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
+            
             <motion.div
               variants={fadeInDown}
               className="w-80 border-ctp-mantle border-solid border-4 relative"
             >
               <a
-                href="https://github.com/CherylZ4/Retina"
+                href="/amznreview.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gap-4 flex flex-col"
               >
                 <Image
-                  src="/retina.png"
-                  alt="Retina Banner"
+                  src="/amznreviewprev.jpg"
+                  alt="Amazon Gift Card Review"
                   priority={true}
                   width={400}
                   height={400}
                 />
                 <div className="mx-4 mb-3">
-                  <div>Retina</div>
+                  <div>Amazon Gift Card Review</div>
                   <div>
-                    A desktop app that focuses on helping people explore their
-                    surroudings by providing definitions of objects around them.
-                    Submission for UoftHacksX
+                    Used Python and Weka to predict product star ratings based on review text.
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
-            <motion.div
-              variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
-            >
-              <a
-                href="https://github.com/conrad-mo/viridian"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gap-4 flex flex-col"
-              >
-                <Image
-                  src="/viridian.png"
-                  alt="Viridian Banner"
-                  priority={true}
-                  width={400}
-                  height={400}
-                />
-                <div className="mx-4 mb-3">
-                  <div>Viridian</div>
-                  <div>
-                    A mobile app for iOS and Android that allows users to talk
-                    to each other
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
-              </a>
-            </motion.div>
-            <motion.div
+
+            {/* <motion.div
               variants={fadeInDown}
               className="w-80 border-ctp-mantle border-solid border-4 relative"
             >
@@ -274,59 +249,7 @@ export default function Home() {
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
-            </motion.div>
-            <motion.div
-              variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
-            >
-              <a
-                href="https://github.com/conrad-mo/personal-website"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gap-4 flex flex-col"
-              >
-                <Image
-                  src="/website.png"
-                  alt="Website Banner"
-                  priority={true}
-                  width={400}
-                  height={400}
-                />
-                <div className="mx-4 mb-3">
-                  <div>Personal Website</div>
-                  <div>A website to display myself, skills and projects</div>
-                </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
-              </a>
-            </motion.div>
-            <motion.div
-              variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
-            >
-              <a
-                href="https://github.com/conrad-mo/Eventful"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="gap-4 flex flex-col"
-              >
-                <Image
-                  src="/eventful.png"
-                  alt="Eventful Banner"
-                  priority={true}
-                  width={400}
-                  height={400}
-                />
-                <div className="mx-4 mb-3">
-                  <div>Eventful</div>
-                  <div>
-                    A mobile app that generates items given an event and
-                    optimizes costs of the items for the event. Ranked 14th out
-                    of 80 projects at HTV8
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
-              </a>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </div>
