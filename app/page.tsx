@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { useState, useEffect } from "react";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
@@ -120,7 +120,7 @@ export default function Home() {
             Skills
           </motion.div>
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-48 justify-center lg:justify-between lg:flex-wrap">
-            <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
+            <div className="flex flex-col text-3xl gap-2 items-center justify-start lg:items-start">
               <motion.div
                 variants={fadeInFast}
                 className="text-xl text-ctp-mauve"
@@ -141,7 +141,7 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>SQL</motion.div>
               </div>
             </div>
-            <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
+            <div className="flex flex-col text-3xl gap-2 items-center justify-start lg:items-start">
               <motion.div
                 variants={fadeInFast}
                 className="text-xl text-ctp-yellow"
@@ -153,12 +153,15 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>React</motion.div>
                 <motion.div variants={fadeInFast}>Node JS</motion.div>
                 <motion.div variants={fadeInFast}>Riverpod</motion.div>
-                <motion.div variants={fadeInFast}>Tailwind CSS</motion.div>
+                <motion.div variants={fadeInFast}>Redux</motion.div>
                 <motion.div variants={fadeInFast}>Axum</motion.div>
-                <motion.div variants={fadeInFast}>CI/CD</motion.div>
+                <motion.div variants={fadeInFast}>FastAPI</motion.div>
+                <motion.div variants={fadeInFast}>Flask</motion.div>
+                <motion.div variants={fadeInFast}>Prisma</motion.div>
+                <motion.div variants={fadeInFast}>PostgreSQL</motion.div>
               </div>
             </div>
-            <div className="flex flex-col text-3xl gap-2 items-center lg:items-start">
+            <div className="flex flex-col text-3xl gap-2 items-center justify-center lg:items-start">
               <motion.div
                 variants={fadeInFast}
                 className="text-xl text-ctp-green"
@@ -167,7 +170,6 @@ export default function Home() {
               </motion.div>
               <div className="text-ctp-subtext0 gap-2 flex flex-col items-center lg:items-start">
                 <motion.div variants={fadeInFast}>Git</motion.div>
-                <motion.div variants={fadeInFast}>Github</motion.div>
                 <motion.div variants={fadeInFast}>Linux</motion.div>
                 <motion.div variants={fadeInFast}>Docker</motion.div>
                 <motion.div variants={fadeInFast}>Firebase</motion.div>
@@ -175,12 +177,17 @@ export default function Home() {
                 <motion.div variants={fadeInFast}>AWS</motion.div>
                 <motion.div variants={fadeInFast}>GCP</motion.div>
                 <motion.div variants={fadeInFast}>Azure</motion.div>
+                <motion.div variants={fadeInFast}>JUnit</motion.div>
+                <motion.div variants={fadeInFast}>Mockito</motion.div>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
-      <div className="flex min-h-screen justify-center items-center p-16" id="projects">
+      <div
+        className="flex min-h-screen justify-center items-center p-16"
+        id="projects"
+      >
         <motion.div
           className="flex flex-col items-center lg:items-start justify-start gap-8 max-w-5xl"
           initial="hide"
@@ -375,8 +382,9 @@ export default function Home() {
                 <div className="mx-4 mb-3">
                   <div>WisdomWhisperer</div>
                   <div>
-                    A web app that allows students to upload lecture videos to summarize, 
-                    generate quiz questions, and ask a chatbot for help. Winner of the Student Challenge at NewHacks2023
+                    A web app that allows students to upload lecture videos to
+                    summarize, generate quiz questions, and ask a chatbot for
+                    help. Winner of the Student Challenge at NewHacks2023
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
