@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       borderRadius: {
-        "1.25": "1.25rem",
+        "1.25": "0.87rem",
       },
     },
   },
