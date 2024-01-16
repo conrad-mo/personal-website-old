@@ -202,7 +202,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-8 w-full justify-center lg:justify-start">
             <motion.div
               variants={fadeInDown}
-              className="flex flex-col w-80 gap-4 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/conrad-mo/geoguesser-utsc"
@@ -216,6 +216,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>UTSC Geoguessr</div>
@@ -224,12 +225,12 @@ export default function Home() {
                     students learn the campus. Submission for HTV 7
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/CherylZ4/Retina"
@@ -243,6 +244,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>Retina</div>
@@ -252,12 +254,12 @@ export default function Home() {
                     Submission for UoftHacksX
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/conrad-mo/viridian"
@@ -271,6 +273,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>Viridian</div>
@@ -279,12 +282,12 @@ export default function Home() {
                     to each other
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/eveev26/SpeechSummarizer"
@@ -298,6 +301,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>Speech Summarizer</div>
@@ -307,12 +311,12 @@ export default function Home() {
                     Hacks 2023
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/conrad-mo/personal-website"
@@ -326,17 +330,18 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>Personal Website</div>
                   <div>A website to display myself, skills and projects</div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/conrad-mo/Eventful"
@@ -350,6 +355,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>Eventful</div>
@@ -359,12 +365,12 @@ export default function Home() {
                     of 80 projects at HTV8
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
             <motion.div
               variants={fadeInDown}
-              className="w-80 border-ctp-mantle border-solid border-4 relative"
+              className="flex flex-col w-80 gap-4 border-ctp-text border-solid border-4 shadow-2xl rounded-3xl relative"
             >
               <a
                 href="https://github.com/rtutz/NewHacks2023-WisdomWhisperer"
@@ -378,6 +384,7 @@ export default function Home() {
                   priority={true}
                   width={400}
                   height={400}
+                  className="rounded-t-1.25"
                 />
                 <div className="mx-4 mb-3">
                   <div>WisdomWhisperer</div>
@@ -387,7 +394,7 @@ export default function Home() {
                     help. Winner of the Student Challenge at NewHacks2023
                   </div>
                 </div>
-                <div className="absolute inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute rounded-t-1.25 rounded-b-3xl inset-0 bg-ctp-base opacity-0 hover:opacity-60 transition-opacity duration-300 ease-in-out"></div>
               </a>
             </motion.div>
           </div>

@@ -7,7 +7,11 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        "1.25": "1.25rem",
+      },
+    },
   },
   plugins: [
     require("@catppuccin/tailwindcss")({
