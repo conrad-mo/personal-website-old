@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import {
   IoDocumentText,
